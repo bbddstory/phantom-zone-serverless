@@ -1,0 +1,114 @@
+.home {
+    h1 {
+        margin-top: 0;
+    }
+
+    .home-section {
+        display: flex;
+        margin-bottom: 50px;
+
+        >.latest {
+            width: 75%;
+
+            .latest-details-wrap {
+                background: rgba(#000, .7);
+                height: 455px;
+                padding: 20px;
+                box-sizing: border-box;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+
+            .latest-list {
+                background: rgba(0, 0, 0, .2);
+                height: 185px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+
+                .slide-list {
+                    .slide {
+                        margin: 16px 10px 12px;
+                    }
+                }
+            }
+        }
+
+        >.watch-later {
+            width: 24%;
+            margin-left: 1%;
+
+            .slide-list {
+                height: 640px;
+                background: rgba(#000, .4);
+                border-radius: 5px;
+
+                .slides {
+                    height: calc(100% - 23px);
+                    padding: 4px 10px 13px;
+                    box-sizing: border-box;
+
+                    .slide {
+                        display: flex;
+                        margin: 16px 0 0;
+                    }
+                }
+            }
+        }
+
+        >.recomm {
+            width: 100%;
+
+            .recomm-details-wrap {
+                background: rgba(#000, .7);
+                height: 455px;
+                padding: 20px;
+                box-sizing: border-box;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+
+            .recomm-list {
+                background: rgba(0, 0, 0, .2);
+                height: 185px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+
+                .slide-list {
+                    .slide {
+                        margin: 16px 10px 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .home-list {
+        position: relative;
+        height: 374px;
+        overflow-y: auto;
+        background: rgba(#000, .3);
+        color: #f2f2f2;
+        border-radius: 2px;
+        padding: 0 30px 35px;
+        box-sizing: border-box;
+        margin-bottom: 50px;
+
+        &>span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%);
+            color: #888;
+        }
+
+        .card-list,
+        .tile-list {
+            width: 100%;
+
+            .card,
+            .tile {
+                background: rgba(#000, 0);
+            }
+        }
+    }
+}

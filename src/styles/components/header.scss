@@ -1,0 +1,57 @@
+.header {
+    // background: lightcoral;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-top: 30px;
+    .logo {
+        width: 200px;
+        height: 100px;
+        // background: url("../../images/login/brand.png") no-repeat;
+        // background-size: contain;
+    }
+    .nav-opts {
+        display: flex;
+        justify-content: flex-end;
+        width: calc(100% - 200px);
+        padding-right: 5px;
+        a {
+            position: relative;
+            width: 30px;
+            height: 42px;
+            margin-left: 10px;
+            cursor: pointer;
+            img {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        span {
+            width: 30px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .opt-home {
+            background: url("../../images/header/ic_home_white_24px.svg") 50% no-repeat;
+        }
+        // .opt-quick {
+        //     background: url("../../images/header/ic_cast_white_24px.svg") 50% no-repeat;
+        // }
+        // .opt-add {
+        //     background: url("../../images/header/ic_add_box_white_24px.svg") 50% no-repeat;
+        // }
+        .opt-notice {
+            background: url("../../images/header/ic_notifications_none_white_24px.svg") 50% no-repeat;
+        }
+        .opt-msg {
+            background: url("../../images/header/ic_message_white_24px.svg") 50% no-repeat;
+        }
+        .opt-me {
+            width: auto;
+            padding-left: 28px;
+            line-height: 42px;
+            background: url("../../images/header/ic_account_circle_white_24px.svg") 0 50% no-repeat;
+        }
+    }
+}

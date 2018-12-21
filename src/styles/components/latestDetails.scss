@@ -1,0 +1,160 @@
+$posterWidth: 182px;
+$posterHeight: 268px;
+$infoWidth: 230px;
+
+.latest-details {
+    display: flex;
+    border-radius: 2px;
+    .poster {
+        position: relative;
+        height: 268px;
+        background-color: #717171;
+        border-radius: 3px;
+        img {
+            width: $posterWidth;
+            height: $posterHeight;
+            border-radius: 3px;
+        }
+    }
+    .info {
+        position: relative;
+        min-width: $infoWidth;
+        max-width: $infoWidth;
+        height: 268px;
+        color: #f2f2f2;
+        margin: 0 0 0 10px;
+        .title {
+            display: block;
+            max-height: 70px;
+            padding-bottom: 5px;
+            overflow: hidden;
+            font-size: 22px;
+        }
+        .orig-title {
+            display: block;
+            max-height: 35px;
+            padding-bottom: 5px;
+            overflow: hidden;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        .misc {
+            display: block;
+            max-height: 95px;
+            overflow: hidden;
+            color: #888;
+            line-height: 1.4;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .actions {
+            position: absolute;
+            bottom: 0;
+            height: 30px;
+            display: flex;
+            ul {
+                position: absolute;
+                right: -126px;
+                width: 165px;
+                padding: 6px;
+                background: #101010;
+                border: 1px solid #333;
+                box-shadow: 3px 3px 5px #000;
+                box-sizing: border-box;
+                border-radius: 3px;
+                li {
+                    display: flex;
+                    padding: 4px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    &:hover {
+                        background: #00a651;
+                    }
+                    span {
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+            div, a {
+                width: 30px;
+                height: 30px;
+                border-radius: 3px;
+                margin-right: 6px;
+                background-color: rgba(#717171, .6);
+                cursor: pointer;
+            }
+            .watch-later {
+                background: rgba(#717171, .6) url("../../images/details/ic_watch_later_white_24px.svg") 50% no-repeat;
+            }
+            .recomm {
+                background: rgba(#717171, .6) url("../../images/details/ic_thumb_up_white_24px.svg") 50% no-repeat;
+            }
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .plot {
+        width: calc(100% - #{$posterWidth} - #{$infoWidth} - 20px);
+        height: 268px;
+        margin: 0 0 0 10px;
+        .plot-txt {
+            height: calc(100% - 50px);
+            color: #f2f2f2;
+            line-height: 1.5;
+            overflow-y: auto;
+            font-size: 14px;
+        }
+        .sites {
+            display: flex;
+            height: 30px;
+            margin-top : 20px;
+            a {
+                display: block;
+                height: 30px;
+                margin-right: 6px;
+            }
+            .imdb {
+                width: 67px;
+                background-size: contain;
+            }
+            .douban {
+                width: 100px;
+                background-size: contain;
+            }
+            .mtime {
+                width: 98px;
+                border-radius: 3px;
+                background-size: contain;
+            }
+        }
+    }
+}
+
+.latest-trailer {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0 0 192px;
+    iframe {
+        margin-right: 16px;
+        background: #717171;
+        border: 1px solid #333;
+        box-sizing: border-box;
+    }
+}
+
+.no-vid-latest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 268px - 22px);
+    color: #444;
+    border: 1px solid #222;
+    margin: 20px 0 0 192px;
+}

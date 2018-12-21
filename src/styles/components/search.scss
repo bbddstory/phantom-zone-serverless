@@ -1,0 +1,96 @@
+// $animTime: .3s;
+
+#search {
+    display: flex;
+    justify-content: center;
+    #search-box {
+        position: relative;
+        display: flex;
+        height: 40px;
+        input {
+            width: 250px;
+            height: 40px;
+            border: 0;
+            border-radius: 20px;
+            font-size: 16px;
+            line-height: 40px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        div {
+            position: absolute;
+            width: 50px;
+            height: 40px;
+            opacity: .4;
+            box-sizing: border-box;
+        }
+        .mag {
+            left: 0;
+            background: url("../../images/search/ic_search_black_24px.svg") 50% 50% no-repeat;
+        }
+        .arrow {
+            right: 0;
+            background: url("../../images/search/ic_keyboard_arrow_down_black_24px.svg") 50% 50% no-repeat;
+            cursor: pointer;
+        }
+    }
+    // .criteria {
+    //     position: absolute;
+    //     top: 40px;
+    //     width: 630px;
+    //     height: 80px;
+    //     margin-top: 1px;
+    //     border-radius: 2px;
+    //     background: #f2f2f2;
+    //     box-shadow: 0px 8px 15px 0px rgba(#000, .6);
+    // }
+    // .criteria-hide {
+    //     display: none;
+    // }
+    // @keyframes extentWidth {
+    //     from {
+    //         width: 630px;
+    //     }
+    //     to {
+    //         width: 900px;
+    //         -webkit-box-shadow: 0px 8px 15px 0px rgba(#000, .6);
+    //         -moz-box-shadow: 0px 8px 15px 0px rgba(#000, .6);
+    //         box-shadow: 0px 8px 15px 0px rgba(#000, .6);
+    //     }
+    // }
+    // .search-fixed {
+    //     position: absolute !important;
+    //     z-index: 100;
+    //     top: 0;
+    //     padding-top: 0 !important;
+    //     animation-name: extentWidth;
+    //     animation-duration: $animTime;
+    //     animation-fill-mode: forwards;
+    //     input {
+    //         border-radius: 0 !important;
+    //         border-bottom-left-radius: 5px !important;
+    //         border-bottom-right-radius: 5px !important;
+    //     }
+    // }
+    // @keyframes restoreWidth {
+    //     from {
+    //         width: 900px;
+    //         border-bottom-left-radius: 2px;
+    //         border-bottom-right-radius: 2px;
+    //     }
+    //     to {
+    //         width: 630px;
+    //         -webkit-box-shadow: none;
+    //         -moz-box-shadow: none;
+    //         box-shadow: none;
+    //     }
+    // }
+    // .search-restore {
+    //     animation-name: restoreWidth;
+    //     animation-duration: $animTime;
+    //     animation-fill-mode: forwards;
+    //     input {
+    //         border-radius: 2px;
+    //     }
+    // }
+}

@@ -1,0 +1,107 @@
+$posterWidth: 91px;
+$posterHeight: 134px;
+
+.slide-list {
+    .slide {
+        position: relative;
+        display: inline-block;
+        margin: 35px 10px 0;
+        border-radius: 2px;
+        .poster {
+            display: block;
+            position: relative;
+            width: $posterWidth;
+            height: $posterHeight;
+            margin: 0 auto;
+            border-radius: 2px;
+            background: #717171;
+            .link {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 30px;
+                height: 30px;
+                background: rgba(#000, .5) url("../../images/details/baseline-open_in_new-24px.svg") 3px no-repeat;
+                border-top-left-radius: 5px;
+                border-bottom-right-radius: 2px;
+                cursor: pointer;
+            }
+            .del-item {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 30px;
+                height: 30px;
+                background: rgba(#000, .5) url("../../images/details/ic_delete_forever_white_24px.svg") 2px no-repeat;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 2px;
+                cursor: pointer;
+            }
+            img {
+                width: $posterWidth;
+                height: $posterHeight;
+                border-radius: 2px;
+                cursor: pointer;
+                -webkit-transition: box-shadow .2s;
+                transition: box-shadow .2s;
+                &:hover {
+                    box-shadow: 0px 8px 15px 0px rgba(#000, .5);
+                    -webkit-transition: box-shadow .2s;
+                    transition: box-shadow .2s;
+                    // animation-name: fadeInShadow;
+                    // animation-duration: .2s;
+                    // animation-fill-mode: forwards;
+                }
+            }
+        }
+        .info {
+            display: inline-block;
+            position: relative;
+            width: calc(100% - #{$posterWidth});
+            height: $posterHeight;
+            vertical-align: bottom;
+            color: #808080;
+            font-size: 12px;
+            padding: 0 0 0 5px;
+            box-sizing: border-box;
+            .title {
+                position: absolute;
+                z-index: 0;
+                top: 2px;
+                color: #fff;
+                font-size: 12px;
+                line-height: 1.15;
+            }
+            .details {
+                position: absolute;
+                bottom: 0;
+                font-size: 12px;
+                line-height: 1.2;
+                color: #888;
+                .year {
+                    display: block;
+                }
+            }
+        }
+    }
+    .dots {
+        display: flex;
+        justify-content: center;
+        span {
+            display: block;
+            width: 25px;
+            height: 10px;
+            background-color: #bbb;
+            border-radius: 5px;
+            margin: 0 5px;
+            transition: background-color 0.6s ease;
+            cursor: pointer;
+            &:hover {
+                background-color: #717171;
+            }
+        }
+        .currDot {
+            background-color: #00a651;
+        }
+    }
+}

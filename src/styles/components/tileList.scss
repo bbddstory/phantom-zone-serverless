@@ -1,0 +1,80 @@
+$posterWidth: 91px;
+$posterHeight: 134px;
+
+.tile-list {
+    .tile {
+        display: inline-block;
+        height: $posterHeight;
+        padding: 0 12px;
+        margin-bottom: 15px;
+        .tile-wrap {
+            display: flex;
+            height: $posterHeight;
+            background: rgba(0, 0, 0, .2);
+            border: 1px solid #444;
+            border-radius: 4px;
+            -webkit-transition: box-shadow .2s;
+            transition: box-shadow .2s;
+            &:hover {
+                // background: #00a651;
+                border: 1px solid #00a651;
+                .info .year, .info span{
+                    color: #fff;
+                }
+                box-shadow: 0px 8px 15px 0px rgba(#000, .5);
+                -webkit-transition: box-shadow .2s;
+                transition: box-shadow .2s;
+                // animation-name: fadeInShadow;
+                // animation-duration: .2s;
+                // animation-fill-mode: forwards;
+            }
+            img {
+                width: $posterWidth;
+                height: $posterHeight;
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+                cursor: pointer;
+                // &:hover {
+                //     animation-name: fadeInShadow;
+                //     animation-duration: .2s;
+                //     animation-fill-mode: forwards;
+                // }
+            }
+            .info {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                justify-content: space-between;
+                width: 100%;
+                margin: 5px;
+                
+                .title {
+                    width: 100%;
+                    font-size: 15px;
+                    line-height: 1.2;
+                    color: #fff;
+                }
+                .director {
+                    display: block;
+                    margin-top: 5px;
+                    font-size: 13px;
+                    color: #717171;
+                }
+                .year {
+                    font-size: 14px;
+                    color: #717171;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1219px) {
+        .tile {
+            width: calc(33.33% - 24px);
+        }
+    }
+    @media screen and (min-width: 1220px) {
+        .tile {
+            width: calc(25% - 24px);
+        }
+    }
+}

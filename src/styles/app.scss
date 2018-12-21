@@ -1,0 +1,192 @@
+@font-face {
+    font-family: OpenSans;
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+::-webkit-scrollbar {
+    width: 0.4em;
+    height: 0.3em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #acacac;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d7d7d7;
+    border-radius: 3px;
+}
+
+html,
+body {
+    height: 100vh !important;
+    font-family: OpenSans, 'Microsoft YaHei', Arial, sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-face-color: #acacac;
+    scrollbar-track-color: #d7d7d7;
+    background: url("../images/login/login_bg.jpg") 50% no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 22px;
+    color: #f2f2f2;
+    margin: 40px 0 20px;
+}
+
+a,
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+input {
+    border: 0;
+    height: 42px;
+    padding: 0 15px;
+    font-size: 16px;
+    font-family: OpenSans, 'Microsoft YaHei', Arial, sans-serif;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    &:focus {
+        outline: 0;
+    }
+}
+
+button,
+input[type="button"] {
+    border: 0;
+    height: 42px;
+    font-size: 16px;
+    background: #00a651;
+    cursor: pointer;
+    &:hover {
+        color: #f2f2f2;
+    }
+}
+
+textarea {
+    font-family: OpenSans, 'Microsoft YaHei', Arial, sans-serif;
+    &:focus {
+        outline: 0;
+    }
+}
+
+button {
+    &:focus {
+        outline: 0;
+    }
+}
+
+#app {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-bg {
+    background: url("../images/login/main_bg.png") repeat !important;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: .2s;
+}
+
+@keyframes pulsingLoad {
+    0% {
+        background-color: #717171;
+    }
+    50% {
+        background-color: #555555;
+    }
+    100% {
+        background-color: #717171;
+    }
+}
+.pulsing-load {
+    animation-name: pulsingLoad;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fadeInShadow {
+    from {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+    to {
+        -webkit-box-shadow: 0px 8px 15px 0px rgba(#000, .5);
+        -moz-box-shadow: 0px 8px 15px 0px rgba(#000, .5);
+        box-shadow: 0px 8px 15px 0px rgba(#000, .5);
+    }
+}
+
+.popup-bg {
+    animation-name: fadeIn;
+    animation-duration: .3s;
+    position: absolute;
+    z-index: 500;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(#000, .9);
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: left;
+}
+
+.btn-main {
+    border: 0;
+    width: 120px;
+    font-size: 16px;
+    margin-left: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    &:hover {
+        color: #f2f2f2;
+        background: #00a651;
+    }
+}
+
+.btn-cancel {
+    border: 0;
+    width: 120px;
+    font-size: 16px;
+    border-radius: 2px;
+    color: gray;
+    background: rgba(#000, 0);
+    cursor: pointer;
+    &:hover {
+        color: #f2f2f2;
+        background: rgba(gray, .5);
+    }
+}
+
+.load-comp {
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    color: #fff;
+}
+
+.hide-el {
+    opacity: 0 !important;
+}
