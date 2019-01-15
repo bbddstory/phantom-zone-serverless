@@ -6,8 +6,8 @@ export const secretHash = () => {
 };
 
 export const POOL_DATA = {
-  UserPoolId : 'ap-southeast-2_ggRSf4P94',
-  ClientId : '7traogcmj806qghmglh5i9cf9t'
+  UserPoolId : 'ap-southeast-2_buqOHHVyi',
+  ClientId : '4ig85k23thbbdhndaep1q7854a'
 };
 
 // For matching any words from any language
